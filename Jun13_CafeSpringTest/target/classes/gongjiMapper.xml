@@ -1,3 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="gongjiMapper"></mapper>
+<mapper namespace="com.won.jun13cafe.gongji.GongjiMapper">
+	<select id="getAllGongji" resultType="com.won.jun13cafe.gongji.Gongji">
+		select * from cafe_test
+	</select>
+</mapper>

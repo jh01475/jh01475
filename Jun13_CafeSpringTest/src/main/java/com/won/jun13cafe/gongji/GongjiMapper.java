@@ -1,5 +1,7 @@
 package com.won.jun13cafe.gongji;
 
-public class GongjiMapper {
+import java.util.List;
 
+public interface GongjiMapper {
+	public abstract List<Gongji> getAllGongji();
 }
