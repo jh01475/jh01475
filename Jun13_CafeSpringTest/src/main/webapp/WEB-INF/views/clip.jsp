@@ -22,8 +22,6 @@
 		<a class="menu-item" href="gongji">공지</a>
 		<a class="menu-item" href="clip" >핫클립</a>
 	</div>
-	<c:forEach var="g" items="${gongji }">
-		<a href="${g.c_url}">${g.c_title }</a><p>
-	</c:forEach>
+	<h1>clip</h1>
 </body>
 </html>

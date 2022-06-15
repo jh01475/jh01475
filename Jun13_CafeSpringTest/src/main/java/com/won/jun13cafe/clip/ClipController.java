@@ -1,4 +1,4 @@
-package com.won.jun13cafe.gongji;
+package com.won.jun13cafe.clip;
 
 import java.text.DateFormat;
 import java.util.Date;
@@ -18,16 +18,16 @@ import com.won.jun13cafe.gongji.GongjiDAO;
 
 
 @Controller
-public class GongjiController {
+public class ClipController {
 	
 	@Autowired
-	private GongjiDAO gDAO;
+
 	
-	@RequestMapping(value = "/gongji", method = RequestMethod.GET)
-	public String gongji(HttpServletRequest req) {
+	@RequestMapping(value = "/clip", method = RequestMethod.GET)
+	public String clip(HttpServletRequest req) {
 		
-		gDAO.getAllGongji(req);
-		return "index";
+		
+		return "clip";
 	}
 	
 }

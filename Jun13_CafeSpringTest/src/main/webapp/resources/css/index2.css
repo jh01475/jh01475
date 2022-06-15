@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+body{
+	background-color:black;
+	color:white;
+	
+}
+a{
+	color:white;
+	font-size: 17px;
+	text-decoration-line: none;
+	font-family: 
+	
+}
+.menu-item{
+	font-size: 30px;
+	font-weight: bold;
+	margin-right: 50px;
+}
+.menu{
+	margin-bottom: 30px;
+}
