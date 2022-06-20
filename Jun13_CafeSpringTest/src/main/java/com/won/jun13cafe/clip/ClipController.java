@@ -14,19 +14,19 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.won.jun13cafe.gongji.GongjiDAO;
+import com.won.jun13cafe.clip.ClipDAO;
 
 
 @Controller
 public class ClipController {
 	
 	@Autowired
-
+	private ClipDAO cDAO;
 	
 	@RequestMapping(value = "/clip", method = RequestMethod.GET)
 	public String clip(HttpServletRequest req) {
 		
-		
+		cDAO.getAllClip(req);
 		return "clip";
 	}
 	

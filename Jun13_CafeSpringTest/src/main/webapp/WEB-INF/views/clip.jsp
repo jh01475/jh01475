@@ -8,7 +8,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<link rel="stylesheet" href = "resources/css/index2.css">
+<link rel="stylesheet" href = "resources/css/clip.css">
 <style>
   a:hover {
     color: #BDBDBD;
@@ -22,6 +22,15 @@
 		<a class="menu-item" href="gongji">공지</a>
 		<a class="menu-item" href="clip" >핫클립</a>
 	</div>
-	<h1>clip</h1>
+	<div class="time-menu">
+		<a class="menu-item" href="">TODAY</a>
+		<a class="menu-item" href="">WEEK</a>
+		<a class="menu-item" href="">MONTH</a>
+	</div>
+	<div>
+		<c:forEach var="c" items="${clip }">
+			<a href="${c.c_url}">${c.c_title } ${c.c_view }</a><p>
+		</c:forEach>
+	</div>
 </body>
 </html>
